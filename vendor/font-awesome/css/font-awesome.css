@@ -480,9 +480,9 @@
 .fa-compress:before {
   content: "\f066";
 }
-.fa-plus:before {
+/*.fa-plus:before {
   content: "\f067";
-}
+}*/
 .fa-minus:before {
   content: "\f068";
 }

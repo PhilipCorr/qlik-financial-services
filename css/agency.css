@@ -17,6 +17,10 @@ p {
   font-size: 14px;
   line-height: 1.75;
 }
+
+.text-formatted {
+  margin-top: 50px;
+}
 p.large {
   font-size: 16px;
 }
@@ -146,6 +150,23 @@ fieldset[disabled] .btn-xl.active {
   color: #60a628;
   background-color: white;
 }
+
+.navbar-brand-heading{
+  display: inline-block;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  color: #f1f1f1;
+}
+
+ .navbar-brand > .navbar-brand-img{
+  margin-top: -20px;
+  display: inline-block;
+}
+
+.navbar-brand-anchor{
+  padding: 0;
+}
+
 .navbar-custom {
   background-color: #222222;
   border-color: transparent;
@@ -226,7 +247,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/header-bg.jpg');
+  background-image: url('../img/header-bg3.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -237,6 +258,8 @@ header {
   text-align: center;
   color: white;
 }
+
+
 header .intro-text {
   padding-top: 100px;
   padding-bottom: 50px;
@@ -277,8 +300,33 @@ header .intro-text .intro-heading {
     margin-bottom: 50px;
   }
 }
+
+.spectrum{
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+#services {
+  /*background-image: url('../img/spectrum-bg.jpg');*/
+  /*background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;*/
+}
+
+@media (min-width: 1000px) {
+  .spectrum {
+    max-width: 1000px;
+    /*height: 300px;*/
+  }
+}
+
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 section h2.section-heading {
   font-size: 40px;
@@ -291,13 +339,13 @@ section h3.section-subheading {
   text-transform: none;
   font-style: italic;
   font-weight: 400;
-  margin-bottom: 75px;
+  margin-bottom: 20px;
 }
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   section {
     padding: 150px 0;
   }
-}
+}*/
 .service-heading {
   margin: 15px 0;
   text-transform: none;
@@ -421,10 +469,10 @@ section h3.section-subheading {
   height: 80px;
   position: absolute;
   z-index: 100;
-  background-color: #60a628;
-  color: white;
+  background-color: white;
+  color: #60a628;
   border-radius: 100%;
-  border: 7px solid #f1f1f1;
+  border: 4px solid #60a628;
   text-align: center;
 }
 .timeline > li .timeline-image h4 {
@@ -432,6 +480,16 @@ section h3.section-subheading {
   margin-top: 12px;
   line-height: 14px;
 }
+
+.timeline > li .timeline-image .img-in-circle{
+    border-radius: 40%;
+}
+
+.timeline > li .timeline-image .white-img-in-circle{
+    padding: 11px 11px 5px 2px;
+    border-radius: 30%;
+}
+
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
   text-align: left;
@@ -606,8 +664,44 @@ section#contact :-ms-input-placeholder {
   color: #eeeeee;
 }
 section#contact .text-danger {
-  color: #e74c3c;
+  color: #f1f1f1;
 }
+
+.back-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  display:none;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-width: 2px;
+  z-index: 3;
+}
+
+.arrow-back-to-top{
+  top:3px;
+  right: 1px;
+  color: #60a628;
+}
+
+a#back-to-top:active{
+  background-color: #60a628;
+  border-color: #60a628;
+}
+
+.back-to-top:hover .arrow-back-to-top {
+  color: white;
+}
+
+span.arrow-back-to-top.glyphicon.glyphicon-chevron-up:active {
+    color: #fff;
+}
+
 footer {
   padding: 25px 0;
   text-align: center;
