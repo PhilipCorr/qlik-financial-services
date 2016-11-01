@@ -611,6 +611,23 @@ section h3.section-subheading {
 aside.clients img {
   margin: 50px auto;
 }
+.row > .left-try-or-buy{
+  height: 200px;
+  background-color: #60a;
+      background: #6bb42f; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#4a9d38, #9dce25); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4a9d38, #9dce25); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4a9d38, #9dce25); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4a9d38, #9dce25); /* Standard syntax (must be last) */
+}
+.row > .right-try-or-buy{
+  height: 200px;
+    background: #fda800; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f8951d, #fbbe0f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f8951d, #fbbe0f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f8951d, #fbbe0f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f8951d, #fbbe0f); /* Standard syntax (must be last) */
+}
 section#contact {
   background-color: #222222;
   background-image: url('../img/map-image.png');
