@@ -155,11 +155,11 @@ fieldset[disabled] .btn-xl.active {
   display: inline-block;
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
-  color: #f1f1f1;
+  color: #959595;
 }
 
  .navbar-brand > .navbar-brand-img{
-  margin-top: -20px;
+  
   display: inline-block;
 }
 
@@ -167,8 +167,17 @@ fieldset[disabled] .btn-xl.active {
   padding: 0;
 }
 
+.navbar-flipboard{
+  background-color: #959595;
+  height: 20px;
+  width: 20px;
+}
+.navbar-flipboard:hover{
+  background-color: #60a628;
+}
+
 .navbar-custom {
-  background-color: #222222;
+  background-color: #60a628;
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
@@ -201,7 +210,7 @@ fieldset[disabled] .btn-xl.active {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
-  color: white;
+  color: #959595;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
@@ -220,7 +229,7 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom {
-    background-color: transparent;
+    background-color: #fff;
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
@@ -239,7 +248,7 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #222222;
+    background-color: #fff;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
@@ -613,8 +622,7 @@ aside.clients img {
 }
 .row > .left-try-or-buy{
   height: 200px;
-  background-color: #60a;
-      background: #6bb42f; /* For browsers that do not support gradients */
+    background: #6bb42f; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#4a9d38, #9dce25); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#4a9d38, #9dce25); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#4a9d38, #9dce25); /* For Firefox 3.6 to 15 */
@@ -628,11 +636,57 @@ aside.clients img {
     background: -moz-linear-gradient(#f8951d, #fbbe0f); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#f8951d, #fbbe0f); /* Standard syntax (must be last) */
 }
-section#contact {
-  background-color: #222222;
-  background-image: url('../img/map-image.png');
-  background-position: center;
-  background-repeat: no-repeat;
+h2.text-try-or-buy{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.text-try-or-buy{
+  color: #fff;
+}
+.block-try-or-buy{
+  background-color: #fff;
+  height: 50px;
+  width: 200px;
+  font-family: ProximaNova-Regular,Helvetica,Roboto,Arial,sans-serif;
+  font-size: 150%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  border: 2px solid white;
+}
+.left-block-try-or-buy a{
+  color: #6bb42f;
+}
+.right-block-try-or-buy a{
+  color: #fda800;
+}
+.col-sm-6 .left-block-try-or-buy:hover > a{
+  background-color: #6bb42f;
+  color:#fff;
+  text-decoration: none;
+
+}
+.col-sm-6 .right-block-try-or-buy:hover > a{
+  background-color: #fda800;
+  color:#fff;
+  text-decoration: none;
+
+}
+.col-sm-6 .left-block-try-or-buy:hover{
+  background-color: #6bb42f;
+  color:#fff;
+  text-decoration: none;
+}
+.col-sm-6 .right-block-try-or-buy:hover{
+  background-color: #fda800;
+  color:#fff;
+  text-decoration: none;
+}
+section#try-or-buy {
+  font-family: ProximaNova-Regular,Helvetica,Roboto,Arial,sans-serif;
+  font-style: normal;
+  color: #fff;
+
 }
 section#contact .section-heading {
   color: white;
