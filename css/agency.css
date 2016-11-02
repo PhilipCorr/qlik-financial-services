@@ -167,13 +167,18 @@ fieldset[disabled] .btn-xl.active {
   padding: 0;
 }
 
-.navbar-flipboard{
+.navbar-qlik-specific{
   background-color: #959595;
   height: 20px;
   width: 20px;
 }
-.navbar-flipboard:hover{
+
+.navbar-qlik-specific:hover{
   background-color: #60a628;
+}
+
+.navbar-fa {
+  font-size: 150%;
 }
 
 .navbar-custom {
@@ -227,7 +232,29 @@ fieldset[disabled] .btn-xl.active {
   color: white;
   background-color: #60a628;
 }
-@media (min-width: 768px) {
+
+@media (max-width: 768px){
+  .navbar-custom .nav li a{
+    display: block;
+    color:#fff;
+  }
+
+  .navbar-custom .nav li .navbar-icon{
+    display: inline;
+    float: left;
+  }
+
+  .page-scroll{
+    clear:both;
+  }
+
+  .navbar-custom .nav li a:hover{
+    color:#aaa;
+  }
+}
+
+@media (min-width: 768px) { 
+
   .navbar-custom {
     background-color: #fff;
     padding: 25px 0;
@@ -310,28 +337,9 @@ header .intro-text .intro-heading {
   }
 }
 
-.spectrum{
-  margin-right: 15%;
-  margin-left: 15%;
-}
-
-#services {
-  /*background-image: url('../img/spectrum-bg.jpg');*/
-  /*background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  text-align: center;*/
-}
-
-@media (min-width: 1000px) {
-  .spectrum {
-    max-width: 1000px;
-    /*height: 300px;*/
-  }
+.services-container {
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 section {
@@ -350,11 +358,7 @@ section h3.section-subheading {
   font-weight: 400;
   margin-bottom: 20px;
 }
-/*@media (min-width: 768px) {
-  section {
-    padding: 150px 0;
-  }
-}*/
+
 .service-heading {
   margin: 15px 0;
   text-transform: none;
@@ -423,6 +427,19 @@ section h3.section-subheading {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
+}
+#about div.resources-container{
+  width:100%;
+}
+
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+
+.resources-heading{
+  margin-bottom: 30px;
 }
 .timeline {
   list-style: none;
@@ -530,6 +547,21 @@ section h3.section-subheading {
 .timeline .timeline-body > ul {
   margin-bottom: 0;
 }
+@media (max-width: 992px) {
+    .resources-first-half{
+        margin-bottom: 120px;
+    }
+
+    .timeline-right:before{
+        top: -135px;
+    }
+}
+@media (max-width: 768px) {
+    .resources-first-half{
+      margin-bottom: 60px;
+    }
+}
+
 @media (min-width: 768px) {
   .timeline:before {
     left: 50%;
@@ -562,6 +594,20 @@ section h3.section-subheading {
   }
 }
 @media (min-width: 992px) {
+  .timeline-left:before {
+    left: 75%;
+  }
+  .timeline-right:before {
+    left: 25%;
+  }
+
+  .timeline > li .timeline-image-left {
+    left: 75%;
+  }
+  .timeline > li .timeline-image-right {
+    left: 25%;
+  }
+
   .timeline > li {
     min-height: 150px;
   }
@@ -587,18 +633,32 @@ section h3.section-subheading {
     min-height: 170px;
   }
   .timeline > li .timeline-panel {
-    padding: 0 20px 20px 100px;
+    padding: 0 20px 20px 20px;
+  }
+
+  .timeline-left:before {
+    left: 75%;
+  }
+  .timeline-right:before {
+    left: 25%;
   }
   .timeline > li .timeline-image {
     width: 170px;
     height: 170px;
-    margin-left: -85px;
   }
+
+  .timeline > li .timeline-image-left {
+    left: 75%;
+  }
+  .timeline > li .timeline-image-right {
+    left: 25%;
+  }
+
   .timeline > li .timeline-image h4 {
     margin-top: 40px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 100px 20px 20px;
+    padding: 0 20px 20px 20px;
   }
 }
 .team-member {
@@ -620,8 +680,21 @@ section h3.section-subheading {
 aside.clients img {
   margin: 50px auto;
 }
+.mini-container{
+  margin-right: 100px;
+  margin-left: 50px;
+  padding-top:10px;
+}
+.computer-container{
+  margin-top: -70px;
+}
+
+.computer-container-cloud{
+  margin-bottom: 45px;
+}
+
 .row > .left-try-or-buy{
-  height: 200px;
+  height: 600px;
     background: #6bb42f; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#4a9d38, #9dce25); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#4a9d38, #9dce25); /* For Opera 11.1 to 12.0 */
@@ -629,7 +702,7 @@ aside.clients img {
     background: linear-gradient(#4a9d38, #9dce25); /* Standard syntax (must be last) */
 }
 .row > .right-try-or-buy{
-  height: 200px;
+  height: 600px;
     background: #fda800; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#f8951d, #fbbe0f); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#f8951d, #fbbe0f); /* For Opera 11.1 to 12.0 */
@@ -683,11 +756,36 @@ h2.text-try-or-buy{
   text-decoration: none;
 }
 section#try-or-buy {
+  margin-top:40px;
   font-family: ProximaNova-Regular,Helvetica,Roboto,Arial,sans-serif;
   font-style: normal;
   color: #fff;
 
 }
+@media (min-width: 768px) {
+    .computer-container-cloud{
+      margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .computer-container-cloud{
+      margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .computer-container-cloud{
+      margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .row > .left-try-or-buy{
+      height:650px;
+    }
+}
+
 section#contact .section-heading {
   color: white;
 }

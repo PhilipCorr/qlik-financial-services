@@ -55,27 +55,41 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/qlik"><i class="fa fa-twitter"></i></a>
+                        <a class="navbar-icon" href="https://twitter.com/qlik">
+                            <i class="navbar-fa fa fa-twitter"></i>
+                        </a>
                     </li>
                         <!--                         
                             <li><a href="http://www.facebook.com/qlik"><i class="fa fa-facebook"></i></a>
                             </li> 
                         -->
                     <li>
-                        <a href="https://www.linkedin.com/company/10162"><i class="fa fa-linkedin"></i></a>
+                        <a class="navbar-icon" href="https://www.linkedin.com/groups/8228694">
+                            <i class="navbar-fa fa fa-linkedin"></i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://flipboard.com/@paulvs/qlik-financial-services-uve8k1dsy"><img class="navbar-flipboard" src="img/logos/flipboard.png"></img></a>
+                        <a class="navbar-icon" href="https://flipboard.com/@paulvs/qlik-financial-services-uve8k1dsy">
+                            <img class="navbar-qlik-specific" src="img/logos/flipboard-icon.png"></img>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://flipboard.com/@paulvs/qlik-financial-services-uve8k1dsy"><img class="navbar-flipboard" src="img/logos/webinars.png"></img></a>
+                        <a class="navbar-icon" href="http://go.qlik.com/FinServOnDemand.html">
+                            <i class="navbar-fa fa fa-laptop" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a class="navbar-icon" href="http://global.qlik.com/us/blog/topics/business-functions/financial-services">
+                            <img class="navbar-qlik-specific" src="img/logos/blog-icon.png"></img>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://flipboard.com/@paulvs/qlik-financial-services-uve8k1dsy"><img class="navbar-flipboard" src="img/logos/blog.png"></img></a>
+                        <a class="navbar-icon" href="https://community.qlik.com/groups/financial-services-user-group">
+                            <i class="navbar-fa fa fa-compass" aria-hidden="true"></i>
+                        </a>
                     </li>
-                    <li>
-                        <a href="https://flipboard.com/@paulvs/qlik-financial-services-uve8k1dsy"><img class="navbar-flipboard" src="img/logos/community.png"></img></a>
-                    </li>
+                    
                     <li>
                         <a class="page-scroll" href="#services">Spectrum</a>
                     </li>
@@ -86,7 +100,7 @@
                         <a class="page-scroll" href="#about">Resources</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Try Or Buy</a>
+                        <a class="page-scroll" href="#try-or-buy">Try Or Buy</a>
                     </li>
                 </ul>
             </div>
@@ -143,7 +157,8 @@
             </div>
           </div>
 </section> -->
-     <section id="services" class="row limit">
+<div id="services" class="services-container" >
+     <section class="row limit">
         <h1 class="section-heading text-center">Visualization <span style="color:#60a628">Alone</span> is Insufficient</h1>
           <h3 class="section-subheading text-muted text-center">
                 There is a broad spectrum of needs and thus,
@@ -151,25 +166,24 @@
                 all of which are critically important
           </h3>
 
-          <div class="col-lg-12 text-center spectrum">
-              <img src="img/spectrum.jpg" class="img-responsive">
+          <div class="col-lg-12">
+              <img src="img/spectrum.jpg" class="img-responsive center-block">
           </div>
 
     </section>
  
-    </section> -->
-     <section id="services" class="row limit">
+     <section class="row limit">
         <h1 class="section-heading text-center">Data-Driven Platform</h1>
           <h3 class="section-subheading text-muted text-center">
                 A platform for all your visual analytics needs
           </h3>
 
-          <div class="col-lg-12 text-center spectrum">
-              <img src="img/BIUseCase.png" class="img-responsive">
+          <div class="col-lg-12">
+              <img src="img/BIUseCase.png" class="img-responsive center-block">
           </div>
 
     </section>
-
+</div>
 
 
     <!-- Demo Grid Section -->
@@ -372,88 +386,169 @@
 
     <!-- Resources Section -->
        <section id="about">
-        <div class="container">
+        <div class="container resources-container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="resources-heading col-lg-12 text-center">
                     <h2 class="section-heading">Resources</h2>
                     <h3 class="section-subheading text-muted">Everything you need to gain a competitive advantage</h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                              <a href="http://www.qlik.com/us/resource-library/top-12-qlik-solutions-in-fs">
-                                <img class="img-in-circle img-circle img-responsive" src="img/logos/magnifying-glass.png" alt="">
-                              </a>
+                <div class="resources-first-half col-md-6"> <!-- first half starts here -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="timeline timeline-left">
+                                <li>
+                                    <div class="timeline-image timeline-image-left">
+                                      <a href="http://www.qlik.com/us/resource-library/top-12-qlik-solutions-in-fs">
+                                        <img class="img-in-circle img-circle img-responsive" src="img/logos/magnifying-glass.png" alt="">
+                                      </a>
 
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
 
-                                    <h4 class="subheading">Top 12 Solutions</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Explore Qlik’s Top 12 Solutions in Financial Services and gain the advantage your firm needs to manage risk, improve sales and build stronger customer relationships.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                              <a href="https://community.qlik.com/groups/financial-services-user-group">
-                                <img class="white-img-in-circle img-circle img-responsive" src="img/logos/plant.png" alt="">
-                              </a>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="subheading">Our Financial Services Community</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Interact with developers, ask and answer industry specific technical questions, get access to useful demo applications.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                              <a href="http://global.qlik.com/us/blog/topics/business-functions/financial-services">
-                                <img class="img-in-circle img-circle img-responsive" src="img/logos/laptop.png" alt="">
-                              </a>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="subheading">Our Financial Services Blog</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Interact with developers, ask and answer industry specific technical questions, get access to useful demo applications.</p>
-                                </div>
-                            </div>
-                        </li>
-                       <li class="timeline-inverted">
-                            <div class="timeline-image">
-                              <a href="http://go.qlik.com/FinServOnDemand.html">
-                                <img class="img-in-circle img-circle img-responsive" src="img/logos/bar-chart.png" alt="">
-                              </a>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
+                                            <h4 class="subheading">Top 12 Solutions</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">Explore Qlik’s Top 12 Solutions in Financial Services and gain the advantage your firm needs to manage risk, improve sales and build stronger customer relationships.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-image timeline-image-left">
+                                      <a href="https://community.qlik.com/groups/financial-services-user-group">
+                                        <img class="white-img-in-circle img-circle img-responsive" src="img/logos/plant.png" alt="">
+                                      </a>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="subheading">Our Financial Services Community</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">Interact with developers, ask and answer industry specific technical questions, get access to useful demo applications.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-image timeline-image-left">
+                                      <a href="http://global.qlik.com/us/blog/topics/business-functions/financial-services">
+                                        <img class="img-in-circle img-circle img-responsive" src="img/logos/laptop.png" alt="">
+                                      </a>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="subheading">Our Financial Services Blog</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">Interact with developers, ask and answer industry specific technical questions, get access to useful demo applications.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                               <li>
+                                    <div class="timeline-image timeline-image-left">
+                                      <a href="http://go.qlik.com/FinServOnDemand.html">
+                                        <img class="img-in-circle img-circle img-responsive" src="img/logos/bar-chart.png" alt="">
+                                      </a>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
 
-                                    <h4 class="subheading">On Demand Webinars</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">See why a modern analytics platform makes dollars and sense</p>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>See the
-                                    <br>whole
-                                    <br>Story!</h4>
-                            </div>
-                        </li> -->
-                    </ul>
-                </div>
+                                            <h4 class="subheading">On Demand Webinars</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">See why a modern analytics platform makes dollars and sense</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- <li class="timeline-inverted">
+                                    <div class="timeline-image">
+                                        <h4>See the
+                                            <br>whole
+                                            <br>Story!</h4>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div> <!-- end of first half -->
+                <div class="resources-first-half col-md-6"> <!-- second half starts here -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="timeline timeline-right">
+                                <li class="timeline-inverted">
+                                    <div class="timeline-image timeline-image-right">
+                                      <a href="http://www.qlik.com/us/resource-library/top-12-qlik-solutions-in-fs">
+                                        <img class="img-in-circle img-circle img-responsive" src="img/logos/magnifying-glass.png" alt="">
+                                      </a>
+
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+
+                                            <h4 class="subheading">Top 12 Solutions</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">Explore Qlik’s Top 12 Solutions in Financial Services and gain the advantage your firm needs to manage risk, improve sales and build stronger customer relationships.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-image timeline-image-right">
+                                      <a href="https://community.qlik.com/groups/financial-services-user-group">
+                                        <img class="white-img-in-circle img-circle img-responsive" src="img/logos/plant.png" alt="">
+                                      </a>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="subheading">Our Financial Services Community</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">Interact with developers, ask and answer industry specific technical questions, get access to useful demo applications.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-image timeline-image-right">
+                                      <a href="http://global.qlik.com/us/blog/topics/business-functions/financial-services">
+                                        <img class="img-in-circle img-circle img-responsive" src="img/logos/laptop.png" alt="">
+                                      </a>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="subheading">Our Financial Services Blog</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">Interact with developers, ask and answer industry specific technical questions, get access to useful demo applications.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                               <li class="timeline-inverted">
+                                    <div class="timeline-image timeline-image-right">
+                                      <a href="http://go.qlik.com/FinServOnDemand.html">
+                                        <img class="img-in-circle img-circle img-responsive" src="img/logos/bar-chart.png" alt="">
+                                      </a>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+
+                                            <h4 class="subheading">On Demand Webinars</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">See why a modern analytics platform makes dollars and sense</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- <li class="timeline-inverted">
+                                    <div class="timeline-image">
+                                        <h4>See the
+                                            <br>whole
+                                            <br>Story!</h4>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div> <!-- end of first half -->
             </div>
         </div>
     </section>
@@ -554,21 +649,31 @@
      <section id="try-or-buy">
             <div class="row">
                     <div class="col-sm-6 left-try-or-buy">
-                        <h2 class="text-try-or-buy">Qlik Sense Desktop</h2>
-                        <p>
-                            Qlik Sense is a supercharged self-service data visualization and analysis application. It lets business users create personalized visualizations, reports and dashboards with drag-and-drop simplicity.
-                        </p>
-                        <div class="block-try-or-buy left-block-try-or-buy">
-                            <a href="http://www.qlik.com/us/try-or-buy/download-qlik-sense">FREE DOWNLOAD</a>
+                        <div class = "mini-container">
+                            <div class="computer-container">
+                                <img class="img-responsive" src="img/logos/computer-left.png">
+                            </div>
+                            <h2 class="text-try-or-buy">Qlik Sense Desktop</h2>
+                            <p>
+                                Qlik Sense is a supercharged self-service data visualization and analysis application. It lets business users create personalized visualizations, reports and dashboards with drag-and-drop simplicity.
+                            </p>
+                            <div class="block-try-or-buy left-block-try-or-buy">
+                                <a href="http://www.qlik.com/us/try-or-buy/download-qlik-sense">FREE DOWNLOAD</a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-6 right-try-or-buy">
-                        <h2 class="text-try-or-buy">Qlik Sense Cloud</h2>
-                        <p>
-                            Unlimited app sharing. Create and privately share visual analytics on any device, anywhere, anytime via secure Qlik hosting.
-                        </p>
-                        <div class="block-try-or-buy right-block-try-or-buy ">
-                            <a href="http://www.qlik.com/us/try-or-buy/join-qlik-sense-cloud">JOIN FOR FREE</a>
+                        <div class = "mini-container">
+                            <div class="computer-container computer-container-cloud">
+                                <img class="img-responsive" src="img/logos/computer-right.png">
+                            </div>
+                            <h2 class="text-try-or-buy">Qlik Sense Cloud</h2>
+                            <p>
+                                Unlimited app sharing. Create and privately share visual analytics on any device, anywhere, anytime via secure Qlik hosting.
+                            </p>
+                            <div class="block-try-or-buy right-block-try-or-buy ">
+                                <a href="http://www.qlik.com/us/try-or-buy/join-qlik-sense-cloud">JOIN FOR FREE</a>
+                            </div>
                         </div>
                     </div>
             </div>
@@ -595,9 +700,9 @@
                             <li><a href="http://www.facebook.com/qlik"><i class="fa fa-facebook"></i></a>
                             </li> 
                         -->
-                        <li><a href="https://www.linkedin.com/company/10162"><i class="fa fa-linkedin"></i></a>
+                        <li><a href="https://www.linkedin.com/groups/8228694"><i class="fa fa-linkedin"></i></a>
                         </li>
-                        <li><a href="https://flipboard.com/@paulvs/qlik-financial-services-uve8k1dsy"><img  src="img/logos/flipboard.png"></img></a>
+                        <li><a href="https://flipboard.com/@paulvs/qlik-financial-services-uve8k1dsy"><img  src="img/logos/flipboard-icon.png"></img></a>
                         </li>
                     </ul>
                 </div>
